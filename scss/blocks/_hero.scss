@@ -1,0 +1,138 @@
+.hero{
+    padding-top: 75px;
+}
+
+.hero__img1{
+    width: 100%;
+    max-width: 720px;
+    margin-bottom: 36px;
+}
+
+.hero__title{
+    margin: 0 auto;
+    margin-bottom: 32px;
+    width: 100%;
+    max-width: 734px;
+    font-family: $font-raleway;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.hero__description{
+    margin: 0 auto;
+    margin-bottom:32px ;
+    width: 100%;
+    max-width: 589px;
+    font-family: $font-openSans;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.hero__button{
+    @include  btnstarted ;
+    padding: 19px 95px 18px 96px;
+    margin-bottom: 158px;
+    width: 280px;
+    height: 56px;
+    background: linear-gradient(152.13deg, #63E1D9 -150.21%, #34A0CD 170.03%);
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+    border-radius: 28px;
+}
+
+.hero__started{  
+    font-family: $font-raleway;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+}
+
+.hero__list{
+    @include listStyleStarter;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 880px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero__item{
+    padding-top: 14px;
+    margin-bottom: 78px;
+    width: 349px;
+
+}
+
+.hero__item-img{
+    margin-bottom: 16px;
+    width: 104px;
+    height: 104px;
+}
+
+.hero__item-titel{
+    margin-bottom: 9px;
+    font-family: $font-raleway;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.hero__item-description{
+    font-size: 14px;
+    line-height: 21px;
+}
+
+@media only screen and(max-width:745px){
+    .hero__img1{
+        margin-bottom: 33px;
+    }
+
+    .hero__title{
+        margin-bottom: 15px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .hero__description{
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .hero__button{
+        padding: 16px 81px 16px 81px;
+        margin-bottom: 120px;
+        width: 240px;
+        height: 48px;
+        border-radius: 24px;
+    }
+
+    .hero__started{  
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .hero__list{
+        justify-content: center;
+    }
+
+    .hero__item{
+        margin-bottom: 80px;
+        width: 320px;
+
+    }
+
+    .hero__item-img{
+        margin-bottom: 24px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .hero__item-titel{
+        margin-bottom: 8px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    
+}

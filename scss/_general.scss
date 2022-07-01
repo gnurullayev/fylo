@@ -1,0 +1,44 @@
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center; 
+  color: #FFFFFF;
+}
+
+.main{
+  background-image: url(../img/main-bg-img.png);
+  background-repeat: no-repeat;
+  background-position: 50% 745px;
+  background-color: #000000;
+  position: relative;
+  z-index: 1;
+}
+
+@media only screen and(max-width:1120px){
+  .main{
+    background-image: url(../img/main-bg-img.png);
+    background-position: 70% 850px;
+  }
+}
+
+@media only screen and(max-width:759px){
+  .main{
+    background-image: url(../img/main-bg-img.png);
+    background-position: 70% bottom;
+  }
+}
+
+@media only screen and(max-width:373px){
+  .main{
+    background-image: url(../img/main-bg-img2.png);
+    background-position: 50% 235px;
+  }
+}

@@ -1,0 +1,55 @@
+.header{
+    padding-top: 73px;
+    min-height: 153px;
+    background-color: #000000;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width:100%; 
+}
+
+.nav{
+
+    &__list{
+        @include listStyleStarter;
+    }
+
+    &__item + &__item{
+        margin-left: 57px;
+    }
+
+    &__link{
+        font-family: $font-raleway;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+}
+
+@media only screen and(max-width:500px){
+
+    .logo{
+        width:80px;
+        height: 24px; 
+    }
+
+    .nav{
+        &__item + &__item{
+            margin-left: 24px;
+        }
+
+        &__link{
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+}
